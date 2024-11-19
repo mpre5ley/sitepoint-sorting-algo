@@ -1,8 +1,8 @@
+# Sorting Algorithms from the article https://www.sitepoint.com/best-sorting-algorithms/
 
 import time
 
-# Sorting Algorithms
-
+# Decorator to print the elapsed time of the algorithm
 def timing_decorator(func):
     def wrapper(arr):
         start_time = time.perf_counter()
