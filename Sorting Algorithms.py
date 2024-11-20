@@ -7,6 +7,7 @@ def timing_decorator(func):
     """ 
     Prints the execution time 
     and name of the algorithm
+    Note: Decorator disables .__doc__ call
     """
     def wrapper(arr):
         start_time = time.perf_counter()
@@ -55,6 +56,5 @@ if __name__ == '__main__':
     arr = [3, 2, 13, 4, 6, 5, 7, 8, 1, 20]
     print(bubble_sort(arr))
     print(insertion_sort(arr))
-    print(insertion_sort.__doc__)
 
     
